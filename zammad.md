@@ -28,15 +28,15 @@ docker compose up -d
 ```  
 docker ps
 
-<img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/638b6bc5-c4cd-442c-a231-a7e7b15637e6" />
-
 ```
 ###navigate to
 ```
 http\\:http://localhost:8080/
 ```
 keep in minds its HTTP not HTTPS
-<img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/34683300-858a-4636-9089-dce0c77035d0" />
 
 the machine needs to be atleast 4gb ram and 2cores
 ---
+Intial web page will look like this
+<img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/34683300-858a-4636-9089-dce0c77035d0" />
+
