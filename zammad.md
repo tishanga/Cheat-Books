@@ -15,11 +15,11 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
-download zammad docker folder
+###download zammad docker folder
 ```
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
-up the container
+###up the container
 ```
 ls
 cd zammad-docker-compose
@@ -28,3 +28,10 @@ docker compose up -d
 ```  
 docker ps
 ```
+###navigate to
+```
+http\\:http://localhost:8080/
+```
+keep in minds its HTTP not HTTPS
+the machine needs to be atleast 4gb ram and 2cores
+---
