@@ -37,12 +37,22 @@ keep in minds its HTTP not HTTPS
 the machine needs to be atleast 4gb ram and 2cores
 
 ---
-Intial web page will look like this
+Intial web page will look like this <br>
+click setup a new system and give your admin credentiols
+
+ 
+<img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/34683300-858a-4636-9089-dce0c77035d0" />
+
+
+Add the neccsary details here and click  next.
+
 
 <img width="445" height="613" alt="image" src="https://github.com/user-attachments/assets/4096f412-ba51-4d21-9ad1-a0cb0ee27c47" />
 
-<img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/34683300-858a-4636-9089-dce0c77035d0" />
-click setup a new system and give your admin credentiols
+
+choose smtp and configure your smtp setting typicaly
+## ADD the email that your are planing to send the mails through 
+## for password copy and paste the app password not the your mail password.
 
 <img width="586" height="662" alt="image" src="https://github.com/user-attachments/assets/55af24fb-4cd5-4a9d-86f3-2ce2efd8b1f9" />
 
