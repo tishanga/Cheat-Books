@@ -44,3 +44,224 @@ Intial web page will look like this
 <img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/34683300-858a-4636-9089-dce0c77035d0" />
 click setup a new system and give your admin credentiols
 
+<img width="586" height="662" alt="image" src="https://github.com/user-attachments/assets/55af24fb-4cd5-4a9d-86f3-2ce2efd8b1f9" />
+
+<img width="418" height="603" alt="image" src="https://github.com/user-attachments/assets/1323f171-a28b-4a2b-818c-04ddc3c49e6d" />
+
+<img width="461" height="503" alt="image" src="https://github.com/user-attachments/assets/e499becd-ed45-4caf-ac1e-c47c4adabab1" />
+
+<img width="341" height="527" alt="image" src="https://github.com/user-attachments/assets/7d6f0581-0ebe-4059-92a5-093898637e3f" />
+
+<img width="1350" height="632" alt="image" src="https://github.com/user-attachments/assets/deb96299-6aff-4dc7-a6d3-53cffb500a01" />
+
+<img width="1247" height="632" alt="image" src="https://github.com/user-attachments/assets/4a8bcaa9-3b0f-43b7-a71c-9f134bb56ddb" />
+
+<img width="463" height="600" alt="image" src="https://github.com/user-attachments/assets/bebb5d90-7ac5-47ca-b55c-0b51ebb70247" />
+
+<img width="228" height="583" alt="image" src="https://github.com/user-attachments/assets/6832e1c4-4fc9-4f22-9e96-1443e7199624" />
+use the app password
+
+<img width="408" height="397" alt="image" src="https://github.com/user-attachments/assets/3f6df4fb-1701-4063-9989-cbcb7f09490d" />
+
+<img width="408" height="540" alt="image" src="https://github.com/user-attachments/assets/25114a57-6ab6-4ee5-b540-c791c401fd82" />
+
+<img width="1335" height="616" alt="image" src="https://github.com/user-attachments/assets/b891b387-93bc-49c2-b128-d46d58fa0665" />
+
+<img width="1136" height="402" alt="image" src="https://github.com/user-attachments/assets/9c05dc04-02c9-49f4-b63c-a9d92822b73c" />
+
+<img width="1146" height="602" alt="image" src="https://github.com/user-attachments/assets/7768b136-7fed-4b74-850b-020cdda6b5c0" />
+
+<img width="1143" height="596" alt="image" src="https://github.com/user-attachments/assets/411e3e8d-d02e-4632-b0fa-c9c4358aaab4" />
+
+<img width="1137" height="590" alt="image" src="https://github.com/user-attachments/assets/3e0cac5e-0d0b-4504-8a2d-9fb85f2e26d4" />
+
+First Name
+Last Name
+Email
+Password 
+Roles - Agent
+Group - Helpdesk - Full
+Submit
+
+<img width="1142" height="610" alt="image" src="https://github.com/user-attachments/assets/0b15d2e7-530e-4d03-b14e-ae0f2edc2137" />
+
+First Name
+Last Name
+Email
+Password 
+Roles - Helpdesk
+Group - Helpdesk - Full
+Submit
+
+<img width="1146" height="531" alt="image" src="https://github.com/user-attachments/assets/74ad15e4-8b6c-4afe-8686-412227d290db" />
+Name - My Assigned Tickets:-
+##Available for the following roles * -
+Admin
+Agent
+##Conditions for shown tickets * (select)
+
+##Attributes * -
+#
+Title
+Customer
+Group
+Created at
+Submit
+
+<img width="1140" height="437" alt="image" src="https://github.com/user-attachments/assets/39973401-ad94-4d41-bd28-3f5f7ce02d93" />
+
+Name - Unassigned & Open Tickets :-
+##Available for the following roles * -
+Admin
+Helpdesk
+##Conditions for shown tickets * (select)
+
+##Attributes * -
+#
+Title
+Customer
+Group
+Created at
+Submit
+
+<img width="1140" height="577" alt="image" src="https://github.com/user-attachments/assets/b783dc81-637e-4f3c-a1c6-a0561255f18d" />
+
+Name - My Pending Reached Tickets
+##Available for the following roles * -
+Admin
+Agent
+##Conditions for shown tickets * (select)
+pending close
+pending reminder
+##Attributes * -
+#
+Title
+Customer
+Group
+Pending till
+Created at
+Submit
+
+<img width="1132" height="420" alt="image" src="https://github.com/user-attachments/assets/fd469d5e-029f-4994-af26-9b7cbc21aebe" />
+
+Name - Open Tickets
+##Available for the following roles * -
+Admin
+Helpdesk
+##Conditions for shown tickets * (select)
+new
+open
+##Attributes * -
+#
+Title
+Customer
+Group
+Owner
+State
+Created at
+Submit
+
+<img width="1142" height="432" alt="image" src="https://github.com/user-attachments/assets/584d69e7-9f93-4e0e-9b24-6f814a18599b" />
+
+Name - Pending Reached Tickets
+##Available for the following roles * -
+Admin
+Helpdesk
+##Conditions for shown tickets * (select)
+pending close
+pending reminder
+##Attributes * -
+#
+Title
+Customer
+Group
+Owner
+Created at
+Submit
+
+<img width="1136" height="365" alt="image" src="https://github.com/user-attachments/assets/c6952e13-458c-44a6-9055-c276f047f995" />
+
+Name - My Replacement Tickets
+##Available for the following roles * -
+Admin
+Agent
+##Conditions for shown tickets * (select)
+new
+open
+pending close
+pending reminder
+##Attributes * -
+#
+Title
+Customer
+Group
+Owner
+Created at
+Escalation at
+Submit
+
+<img width="1142" height="407" alt="image" src="https://github.com/user-attachments/assets/3fa7664d-9e61-47d8-8859-7bcc87f9dd26" />
+Name - Closed Tickets
+##Available for the following roles * -
+Admin
+Helpdesk
+##Conditions for shown tickets * (select)
+closed
+##Attributes * -
+#
+Title
+Customer
+Group
+Owner
+State
+Created at
+Submit
+
+<img width="1136" height="382" alt="image" src="https://github.com/user-attachments/assets/2eafed71-e673-4e7d-a4f6-753a94ec6f29" />
+
+Name - My Closed Tickets
+##Available for the following roles * -
+Admin
+Helpdesk
+##Conditions for shown tickets * (select)
+closed
+##Attributes * -
+#
+Title
+Customer
+Group
+Owner
+State
+Created at
+Submit
+
+
+<img width="1130" height="527" alt="image" src="https://github.com/user-attachments/assets/7002e961-30d5-4895-8f6e-82743793adcf" />
+
+only Active - customer notification (on owner change)
+
+<img width="931" height="532" alt="image" src="https://github.com/user-attachments/assets/6626a29b-c179-43e8-89f3-1ffa6a50b4e2" />
+
+Enable Ticket creation - no - submit
+
+<img width="1145" height="570" alt="image" src="https://github.com/user-attachments/assets/907ec5aa-b212-4413-91fd-aa75023b9c57" />
+
+Name - ALL
+Filter
+ State - all
+Available for the following roles - Admin
+Submit
+
+<img width="1132" height="527" alt="image" src="https://github.com/user-attachments/assets/ef6471ba-b486-47de-be32-a8a2100972a7" />
+
+Name
+Filter
+ State - all
+ Owner - Specific user
+
+Available for the following roles - Admin
+Submit
+
+
+
+
