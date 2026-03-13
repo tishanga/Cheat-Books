@@ -15,10 +15,13 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
+download zammad docker folder
 ```
 git clone https://github.com/zammad/zammad-docker-compose.git
 ```
+up the container
 ```
+ls
 cd zammad-docker-compose
 docker compose up -d
 ```
