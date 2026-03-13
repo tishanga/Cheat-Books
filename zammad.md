@@ -41,5 +41,8 @@ the machine needs to be atleast 4gb ram and 2cores
 
 ---
 Intial web page will look like this
+
+<img width="445" height="613" alt="image" src="https://github.com/user-attachments/assets/4096f412-ba51-4d21-9ad1-a0cb0ee27c47" />
+
 <img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/34683300-858a-4636-9089-dce0c77035d0" />
 
