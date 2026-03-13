@@ -27,6 +27,9 @@ docker compose up -d
 ```
 ```  
 docker ps
+
+<img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/638b6bc5-c4cd-442c-a231-a7e7b15637e6" />
+
 ```
 ###navigate to
 ```
