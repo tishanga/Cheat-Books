@@ -52,24 +52,54 @@ Add the neccsary details here and click  next.
 
 choose smtp and configure your smtp setting typicaly
 ## ADD the email that your are planing to send the mails through 
-## for password copy and paste the app password not the your mail password.
+
 
 <img width="586" height="662" alt="image" src="https://github.com/user-attachments/assets/55af24fb-4cd5-4a9d-86f3-2ce2efd8b1f9" />
 
+
+## for password copy and paste the app password not the your mail password.
+
+
 <img width="418" height="603" alt="image" src="https://github.com/user-attachments/assets/1323f171-a28b-4a2b-818c-04ddc3c49e6d" />
+
+
+### you can skip this part for now
+
 
 <img width="461" height="503" alt="image" src="https://github.com/user-attachments/assets/e499becd-ed45-4caf-ac1e-c47c4adabab1" />
 
-<img width="341" height="527" alt="image" src="https://github.com/user-attachments/assets/7d6f0581-0ebe-4059-92a5-093898637e3f" />
+
+### navigate to settings > Groups
 
 <img width="1350" height="632" alt="image" src="https://github.com/user-attachments/assets/deb96299-6aff-4dc7-a6d3-53cffb500a01" />
 
+#### create a new group
+
+<img width="341" height="527" alt="image" src="https://github.com/user-attachments/assets/7d6f0581-0ebe-4059-92a5-093898637e3f" />
+
+
+
+### navigate to channels > email 
 <img width="1247" height="632" alt="image" src="https://github.com/user-attachments/assets/4a8bcaa9-3b0f-43b7-a71c-9f134bb56ddb" />
 
+
+#### create a new email channel click the expert option
 <img width="463" height="600" alt="image" src="https://github.com/user-attachments/assets/bebb5d90-7ac5-47ca-b55c-0b51ebb70247" />
 
+### add the details the
+
+host
+```
+imap.gmail.com
+```
+port
+```
+587
+```
+#### use the app password
+#### add your Gmail acoount and app password you created
+
 <img width="228" height="583" alt="image" src="https://github.com/user-attachments/assets/6832e1c4-4fc9-4f22-9e96-1443e7199624" />
-use the app password
 
 <img width="408" height="397" alt="image" src="https://github.com/user-attachments/assets/3f6df4fb-1701-4063-9989-cbcb7f09490d" />
 
