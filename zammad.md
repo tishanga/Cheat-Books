@@ -302,6 +302,37 @@ Filter
 Available for the following roles - Admin
 Submit
 
+docker exec -it zammad-docker-compose-zammad-railsserver-1 /bin/bash
 
+####################
+cd ~
+####################
+cd /opt/zammad
+#####
+ls bin
+##########
+bin/rails c
+####################
+🧠 Even safer (limit test)
+
+Before deleting, see how many will be removed:
+
+Ticket.joins(:state).where(ticket_states: { name: 'new' }).count
+#Delete-ALL
+Ticket.joins(:state).where(ticket_states: { name: 'new' }).destroy_all
+
+#Delete-Last-1-Hour
+Ticket.where('created_at > ?', 1.hour.ago).destroy_all
+
+#Delete only a few first (10):
+Ticket.joins(:state).where(ticket_states: { name: 'new' }).limit(10).destroy_all
+
+💡 Optional: delete only older new tickets
+Example: older than 30 days
+
+Ticket.joins(:state)
+      .where(ticket_states: { name: 'new' })
+      .where('tickets.updated_at < ?', 30.days.ago)
+      .destroy_all
 
 
