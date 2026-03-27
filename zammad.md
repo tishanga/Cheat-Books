@@ -99,21 +99,30 @@ port
 #### use the app password
 #### add your Gmail acoount and app password you created
 
+
+<img width="1335" height="616" alt="image" src="https://github.com/user-attachments/assets/b891b387-93bc-49c2-b128-d46d58fa0665" />
+
+
+
 <img width="228" height="583" alt="image" src="https://github.com/user-attachments/assets/6832e1c4-4fc9-4f22-9e96-1443e7199624" />
 
 <img width="408" height="397" alt="image" src="https://github.com/user-attachments/assets/3f6df4fb-1701-4063-9989-cbcb7f09490d" />
 
 <img width="408" height="540" alt="image" src="https://github.com/user-attachments/assets/25114a57-6ab6-4ee5-b540-c791c401fd82" />
 
-<img width="1335" height="616" alt="image" src="https://github.com/user-attachments/assets/b891b387-93bc-49c2-b128-d46d58fa0665" />
 
-<img width="1136" height="402" alt="image" src="https://github.com/user-attachments/assets/9c05dc04-02c9-49f4-b63c-a9d92822b73c" />
 
-<img width="1146" height="602" alt="image" src="https://github.com/user-attachments/assets/7768b136-7fed-4b74-850b-020cdda6b5c0" />
+#### Navigate to Roles and Create a new Role named AGENT
+- add the following permissions
 
-<img width="1143" height="596" alt="image" src="https://github.com/user-attachments/assets/411e3e8d-d02e-4632-b0fa-c9c4358aaab4" />
+<img width="1146" height="602" alt="image" src="https://github.com/user-attachments/assets/7768b136-7fed-4b74-850b-020cdda6b5c0" /> ##2
+#### add the following permissions
+<img width="1136" height="402" alt="image" src="https://github.com/user-attachments/assets/9c05dc04-02c9-49f4-b63c-a9d92822b73c" /> ##1
 
-<img width="1137" height="590" alt="image" src="https://github.com/user-attachments/assets/3e0cac5e-0d0b-4504-8a2d-9fb85f2e26d4" />
+
+<img width="1143" height="596" alt="image" src="https://github.com/user-attachments/assets/411e3e8d-d02e-4632-b0fa-c9c4358aaab4" /> ##3
+
+<img width="1137" height="590" alt="image" src="https://github.com/user-attachments/assets/3e0cac5e-0d0b-4504-8a2d-9fb85f2e26d4" /> ##4
 
 First Name
 Last Name
