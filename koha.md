@@ -110,7 +110,7 @@ bash# List enabled sites
 ls /etc/apache2/sites-enabled/
 ```
 
-# View Koha's Apache config (replace LIBRARYNAME with your instance name)
+View Koha's Apache config (replace LIBRARYNAME with your instance name)
 ```
 cat /etc/apache2/sites-enabled/library.conf
 ```
@@ -126,7 +126,7 @@ bash# For OPAC
 ```
 sudo certbot --apache -d opac.yourdomain.com
 ```
-# For Staff interface
+For Staff interface
 ```
 sudo certbot --apache -d staff.yourdomain.com
 ```
@@ -146,11 +146,11 @@ bash# Enable SSL module
 ```
 sudo a2enmod ssl
 ```
-# Enable headers module (needed for HSTS)
+Enable headers module (needed for HSTS)
 ```
 sudo a2enmod headers
 ```
-# Make sure Apache listens on 443
+Make sure Apache listens on 443
 ```
 sudo nano /etc/apache2/ports.conf
 ```
@@ -180,7 +180,7 @@ bash# Test Apache config for errors
 ```
 sudo apache2ctl configtest
 ```
-# If output is "Syntax OK", reload
+If output is "Syntax OK", reload
 ```
 sudo systemctl reload apache2
 ```
@@ -190,7 +190,7 @@ bash# Check renewal timer
 ```
 sudo systemctl status certbot.timer
 ```
-# Test renewal (dry run)
+Test renewal (dry run)
 ```
 sudo certbot renew --dry-run
 ```
@@ -210,11 +210,11 @@ bash# Overall disk usage
 ```
 df -h
 ```
-# Find the biggest directories from root
+Find the biggest directories from root
 ```
 sudo du -h --max-depth=2 / 2>/dev/null | sort -rh | head -30
 ```
-# Check Koha-specific directories
+Check Koha-specific directories
 ```
 sudo du -sh /var/log/koha/*
 sudo du -sh /var/lib/mysql/
@@ -227,7 +227,7 @@ bash# Koha instance logs (replace LIBRARYNAME)
 ```
 ls -lh /var/log/koha/LIBRARYNAME/
 ```
-# Common log files
+Common log files
 ```
 sudo du -sh /var/log/koha/LIBRARYNAME/*.log
 ```
@@ -240,7 +240,7 @@ sudo truncate -s 0 /var/log/koha/LIBRARYNAME/plack-access.log
 sudo truncate -s 0 /var/log/koha/LIBRARYNAME/opac-error.log
 sudo truncate -s 0 /var/log/koha/LIBRARYNAME/intranet-error.log
 
-# Delete rotated/compressed old logs
+#### Delete rotated/compressed old logs
 sudo find /var/log/koha/ -name "*.gz" -delete
 sudo find /var/log/koha/ -name "*.1" -delete
 sudo find /var/log/apache2/ -name "*.gz" -delete
@@ -264,13 +264,13 @@ Step 3: Clean Up System Logs
 bash# Clean systemd journal logs (keep only last 3 days)
 sudo journalctl --vacuum-time=3d
 
-# Or limit by size (keep only 200MB)
+Or limit by size (keep only 200MB)
 sudo journalctl --vacuum-size=200M
 
-# Check size before/after
+Check size before/after
 sudo journalctl --disk-usage
 
-# Clean Apache logs
+Clean Apache logs
 sudo find /var/log/apache2/ -name "*.gz" -delete
 sudo find /var/log/apache2/ -name "*.log.*" -delete
 
@@ -280,15 +280,15 @@ sudo mysql -e "SELECT table_schema AS 'Database',
 ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS 'Size (MB)' 
 FROM information_schema.tables GROUP BY table_schema;"
 
-# Check binary logs (these can be huge)
+Check binary logs (these can be huge)
 sudo mysql -e "SHOW BINARY LOGS;"
 
-# Purge binary logs older than 7 days
+Purge binary logs older than 7 days
 sudo mysql -e "PURGE BINARY LOGS BEFORE DATE(NOW() - INTERVAL 7 DAY);"
 
-# Check and disable binary logging if not needed for replication
+Check and disable binary logging if not needed for replication
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-# Add or uncomment: skip-log-bin
+Add or uncomment: skip-log-bin
 
 Step 5: Clean Koha's Internal Action Logs (Database)
 Koha stores action logs inside the database which can grow huge:
@@ -316,12 +316,12 @@ bash# Mount external drive first
 ```
 sudo mount /dev/sdb1 /mnt/backup
 ```
-# Archive and move logs
+Archive and move logs
 ```
 sudo tar -czf /mnt/backup/koha-logs-$(date +%Y%m%d).tar.gz /var/log/koha/
 sudo tar -czf /mnt/backup/apache-logs-$(date +%Y%m%d).tar.gz /var/log/apache2/
 ```
-# After verifying archive, clear originals
+After verifying archive, clear originals
 ```
 sudo find /var/log/koha/ -name "*.log" -exec truncate -s 0 {} \;
 ```
@@ -331,7 +331,7 @@ bash# Send logs to remote server
 ```
 scp -r /var/log/koha/ user@remote-server:/backup/koha-logs/
 ```
-# Or use rsync (faster for large files)
+Or use rsync (faster for large files)
 ```
 rsync -avz /var/log/koha/ user@remote-server:/backup/koha-logs/
 ```
@@ -352,39 +352,39 @@ sudo apt autoremove -y
 sudo apt clean
 sudo apt autoclean
 ```
-# Clear thumbnail/temp cache
+Clear thumbnail/temp cache
 ```
 sudo rm -rf /tmp/*
 sudo rm -rf /var/tmp/*
 ```
-# Find large files over 100MB anywhere
+Find large files over 100MB anywhere
 ```
 sudo find / -type f -size +100M 2>/dev/null | sort -k5 -rh
 ```
 
 
 
-# expand disk space
+expand disk space
 
 Step 1: Extend disk in your hypervisor (VMware/VirtualBox/Proxmox) first
 Then in Linux:
 
-# Check current partitions
+Check current partitions
 ```
 lsblk
 sudo fdisk -l
 ```
-# If using LVM (most Ubuntu/Debian servers do)
+If using LVM (most Ubuntu/Debian servers do)
 ```
 sudo pvdisplay
 sudo vgdisplay
 sudo lvdisplay
 ```
-# Extend the logical volume (replace with your actual LV path)
+Extend the logical volume (replace with your actual LV path)
 ```
 sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
 ```
-# Resize the filesystem
+Resize the filesystem
 ```
 sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
 ```
