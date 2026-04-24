@@ -388,6 +388,11 @@ Resize the filesystem
 ```
 sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
 ```
+
+# ssh key gen 
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
 # Verify
 ```
 df -h
